@@ -1,5 +1,5 @@
 - name: ping the server
   hosts: frontend # which server you are connecting to 
   tasks:  # list of connections/modules/tasks
-  -name: ping
-   asnsible.builtin.ping 
+  - name: ping
+    asnsible.builtin.ping: 
