@@ -1,0 +1,12 @@
+- name:
+  hosts:
+  connection: local
+  vars: 
+    COURSE: ansible
+    DURATION: 10hrs
+    TRAINER: Shivakumar reddy
+  tasks:
+
+  - name: print the course info 
+    ansible.builtin.debug:
+      msg: "course name is  {{ COURSE }}, DURATION IS {{ DURATION }}, TRAINER is {{ TRAINER }}"
