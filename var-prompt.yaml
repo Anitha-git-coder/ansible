@@ -8,5 +8,5 @@
   tasks:
   - name: print creditials
     ansible.builtin.debug:
-      msg "hello user nmae is {{ username }}"
+      msg: "hello user nmae is {{ username }}"
 
