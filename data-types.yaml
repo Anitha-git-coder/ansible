@@ -14,7 +14,7 @@
       cm: ansible
   tasks:
   - name: print course info
-    ansible.built.in.debug:
+    ansible.builtin.debug:
       msg: "course is {{ course }} , duration is {{ duration }} , tools are {{ tools }} , concepts are {{ concepts }}"
 
 
