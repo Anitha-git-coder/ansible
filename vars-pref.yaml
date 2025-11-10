@@ -5,10 +5,10 @@
     NAME: play level variables
   # vars_files:
   # - course.yaml
-  vars_prompt:
-  - name: NAME
-    prompt: what is your name?
-    private: false
+  # vars_prompt:
+  # - name: NAME
+  #   prompt: what is your name?
+  #   private: false
   tasks:
   - name: testing variables pref
     # vars:
