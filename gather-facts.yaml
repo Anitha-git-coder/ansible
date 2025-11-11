@@ -1,4 +1,4 @@
-- name: "gather facts
+- name: gather facts
   hosts: local 
   connection: local
   # List of tasks/collections/modules
