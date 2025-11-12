@@ -5,7 +5,7 @@
     technologies: devops, linux, ansible, shell  
     name: "anitha Pinipe"
     gmail: "Aitha.Piipe@gmail.com"
-    ipv4: 192.33.44.55
+    ipv4: "192.33.44.55"
     tags:     
       Application: payment
       Environment: dev
