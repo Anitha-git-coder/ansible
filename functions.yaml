@@ -4,6 +4,7 @@
   vars: 
     technologies: devops, linux, ansible, shell  
     name: "anitha Pinipe"
+    gmail: "Aitha.Piipe@gmail.com
     tags:     
       Application: payment
       Environment: dev
@@ -45,3 +46,7 @@
   - name: convert to upper
     ansible.builtin.debug:
       msg:  "to upper {{ name | upper }}"
+
+  - name: convert to lower
+    ansible.builtin.debug:
+      msg: "lower case of gmail is  {{ gmail | lower }}"
