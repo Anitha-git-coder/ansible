@@ -2,8 +2,8 @@
   hosts: local
   connection: local
   vars: 
-    technologies: devops, linux, ansible, shell
-  tags:     
+    technologies: devops, linux, ansible, shell  
+  mtags:     
     Application: payment
     Environment: dev
   tasks:
@@ -15,6 +15,6 @@
     ansible.builtin.debug:
       msg: "technologies are {{ technologies | split(',') }}"
 
-  - name: dictionary to list  
+  - name: convert map to list 
     ansible.builtin.debug:
       msg: " tags are {{ tags | dict2items }}"
