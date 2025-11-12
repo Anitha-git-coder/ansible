@@ -5,6 +5,7 @@
     technologies: devops, linux, ansible, shell  
     name: "anitha Pinipe"
     gmail: "Aitha.Piipe@gmail.com"
+    ipv4: 2223.333.444.555
     tags:     
       Application: payment
       Environment: dev
@@ -50,3 +51,7 @@
   - name: convert to lower
     ansible.builtin.debug:
       msg: "lower case of gmail is  {{ gmail | lower }}"
+
+  - name: check if ipadd is valid
+    ansible.builtin.debug:  "{{ ipv4 | ansible.utils.ipaddr }}"
+      
