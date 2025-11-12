@@ -3,7 +3,7 @@
   connection: local
   vars: 
     technologies: devops, linux, ansible, shell  
-    mtags:     
+    tags:     
       Application: payment
       Environment: dev
   tasks:
