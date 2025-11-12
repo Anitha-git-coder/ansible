@@ -53,5 +53,6 @@
       msg: "lower case of gmail is  {{ gmail | lower }}"
 
   - name: check if ipadd is valid
-    ansible.builtin.debug:  "{{ ipv4 | ansible.utils.ipaddr }}"
+    ansible.builtin.debug: 
+      msg: "{{ ipv4 | ansible.utils.ipaddr }}"
       
