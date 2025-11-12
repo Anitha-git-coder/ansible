@@ -55,4 +55,12 @@
   - name: check if ipadd is valid
     ansible.builtin.debug: 
       msg: "{{ ipv4 | ansible.utils.ipaddr }}"
+
+  - name: grep for root
+    ansible.builtin.command: cat /etc/passwd | grep root
+    register: command_output
+
+  - name: print the command output 
+    ansible.builtin.debug:
+      msg: "{{ command_output }}"
       
