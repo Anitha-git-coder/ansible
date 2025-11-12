@@ -3,6 +3,7 @@
   connection: local
   vars: 
     technologies: devops, linux, ansible, shell  
+    name: "anitha Pinipe"
     tags:     
       Application: payment
       Environment: dev
@@ -40,3 +41,7 @@
     ansible.builtin.copy:
       dest: ./student-data.json
       content: "{{ student_yaml | to_nice_json }}"
+
+  - name: convert to upper
+    ansible.builtin.debug:
+      msg:  "to upper {{ name | upper }}"
