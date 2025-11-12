@@ -3,9 +3,9 @@
   connection: local
   vars: 
     technologies: devops, linux, ansible, shell  
-  mtags:     
-    Application: payment
-    Environment: dev
+    mtags:     
+      Application: payment
+      Environment: dev
   tasks:
   - name: default variables
     ansible.builtin.debug:
