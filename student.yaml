@@ -1,0 +1,11 @@
+- name: anitha
+  age: 30
+  address: 
+  - doornum: 1/2/3/
+    city: bangalore
+
+- name: Raj
+  age: 30
+  address: 
+  - doornum: 1/2/3/
+    city: bangalore
