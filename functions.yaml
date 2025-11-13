@@ -67,6 +67,7 @@
   - name: redirect the output
     ansible.builtin.command: ls -ltr > /tmp/output.txt
     register: red_output 
+    ignore_errors: true
 
   - name: print the red_output
     ansible.builtin.debug:
